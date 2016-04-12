@@ -1,5 +1,6 @@
 {
   "name": "electron-toy-app",
   "version": "0.0.1",
-  "main": "main.js"
+  "main": "electron-main.js",
+  "description": "This package.json is necessary to tell Electron which script to use for bootstrapping."
 }

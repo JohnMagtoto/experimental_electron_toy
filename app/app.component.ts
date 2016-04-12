@@ -1,4 +1,3 @@
-import {bootstrap} from 'angular2/platform/browser';
 import {Component} from 'angular2/core';
 
 @Component({
@@ -8,10 +7,4 @@ import {Component} from 'angular2/core';
   `
 })
 
-export class App {
-
-
-
-}
-
-bootstrap(App);
+export class AppComponent {} 

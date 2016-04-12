@@ -8,20 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var browser_1 = require('angular2/platform/browser');
 var core_1 = require('angular2/core');
-var App = (function () {
-    function App() {
+var AppComponent = (function () {
+    function AppComponent() {
     }
-    App = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
             selector: 'app',
             template: "\n    <h3>Hello World from AppComponent!!!</h3>\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], App);
-    return App;
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.App = App;
-browser_1.bootstrap(App);
-//# sourceMappingURL=app.js.map
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=app.component.js.map

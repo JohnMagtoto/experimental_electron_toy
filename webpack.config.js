@@ -1,3 +1,8 @@
+// resources:
+// https://webpack.github.io/docs/configuration.html
+// http://jonathancreamer.com/advanced-webpack-part-1-the-commonschunk-plugin/
+
+
 var path = require('path');
 var webpack = require('webpack');
 var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
@@ -7,6 +12,7 @@ module.exports = {
   debug: true,
 
   entry: {
+    // Entry point for angular2 modules
     'angular2': [
       'rxjs',
       'reflect-metadata',
@@ -14,9 +20,11 @@ module.exports = {
       'angular2/router',
       'angular2/http'
     ],
-    'app': './app/app'
+    // Entry point for the application
+    'app': './app/main'
   },
 
+  // Where to place build files;
   output: {
     path: __dirname + '/build/',
     publicPath: 'build/',
@@ -25,6 +33,8 @@ module.exports = {
     chunkFilename: '[id].chunk.js'
   },
 
+  // file types to find
+  // An array of extensions that should be used to resolve modules. -> from site
   resolve: {
     extensions: ['','.ts','.js','.json', '.css', '.html']
   },
@@ -39,6 +49,8 @@ module.exports = {
     ]
   },
 
+  // extra plugins of the application
+  // CommonsChunkPlugin purpose is to group modules (chunks) of code used the most and place them into a separate file. This is to have a common file that contains css and js that is commonly used in the app.
   plugins: [
     new CommonsChunkPlugin({ name: 'angular2', filename: 'angular2.js', minChunks: Infinity }),
     new CommonsChunkPlugin({ name: 'common',   filename: 'common.js' })
