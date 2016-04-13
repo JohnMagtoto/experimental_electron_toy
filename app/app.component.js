@@ -11,14 +11,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('angular2/core');
 var router_1 = require("angular2/router");
 var bookmarklist_component_1 = require("./bookmark/bookmarklist.component");
+var bookmark_component_1 = require("./bookmark/bookmark.component");
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app',
-            template: "\n    <h3>Hello World from AppComponent!!!</h3>\n  ",
-            directives: [router_1.ROUTER_DIRECTIVES],
+            template: "\n    <h3>Hello World from AppComponent!!!</h3>\n    <bookmark></bookmark>\n  ",
+            directives: [
+                router_1.ROUTER_DIRECTIVES,
+                bookmark_component_1.BookmarkComponent],
             providers: [router_1.ROUTER_PROVIDERS]
         }),
         router_1.RouteConfig([
@@ -26,6 +29,11 @@ var AppComponent = (function () {
                 path: "/bookmarklist",
                 name: "BookmarkList",
                 component: bookmarklist_component_1.BookmarkListComponent
+            },
+            {
+                path: "/bookmark",
+                name: "Bookmark",
+                component: bookmark_component_1.BookmarkComponent
             }
         ]), 
         __metadata('design:paramtypes', [])

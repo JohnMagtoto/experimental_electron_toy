@@ -1,0 +1,1 @@
+{"version":3,"file":"bookmark.component.js","sourceRoot":"","sources":["bookmark.component.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,qBAAwB,eAAe,CAAC,CAAA;AAExC,iCAAiC,8BAA8B,CAAC,CAAA;AAUhE;IAAA;IAEA,CAAC;IAVD;QAAC,gBAAS,CAAC;YACT,QAAQ,EAAG,UAAU;YACrB,WAAW,EAAG,wCAAwC;YACtD,UAAU,EAAG;gBACX,qCAAkB;aACnB;SACF,CAAC;;yBAAA;IAIF,wBAAC;AAAD,CAAC,AAFD,IAEC;AAFY,yBAAiB,oBAE7B,CAAA"}
