@@ -8,29 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('angular2/core');
-var router_1 = require("angular2/router");
-var bookmarklist_component_1 = require("./bookmark/bookmarklist.component");
-var AppComponent = (function () {
-    function AppComponent() {
+var core_1 = require("angular2/core");
+var BookmarkListComponent = (function () {
+    function BookmarkListComponent() {
     }
-    AppComponent = __decorate([
+    BookmarkListComponent = __decorate([
         core_1.Component({
-            selector: 'app',
-            template: "\n    <h3>Hello World from AppComponent!!!</h3>\n  ",
-            directives: [router_1.ROUTER_DIRECTIVES],
-            providers: [router_1.ROUTER_PROVIDERS]
-        }),
-        router_1.RouteConfig([
-            {
-                path: "/bookmarklist",
-                name: "BookmarkList",
-                component: bookmarklist_component_1.BookmarkListComponent
-            }
-        ]), 
+            "selector": "bookmark-list",
+            "template": "<h1>BookmarkListComponent</h1>"
+        }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], BookmarkListComponent);
+    return BookmarkListComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.BookmarkListComponent = BookmarkListComponent;
+//# sourceMappingURL=bookmarklist.component.js.map
