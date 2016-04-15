@@ -1,13 +1,14 @@
 import {Component} from "angular2/core";
 
-import {BannerBarComponent} from "../bookmark/banner.component";
+import {BookmarkListComponent} from "./bookmarklist.component";
 
 @Component({
   selector : "bookmark",
   templateUrl : "./app/bookmark/bookmark.component.html",
   directives : [
-    BannerBarComponent
-  ]
+    BookmarkListComponent
+  ],
+  styleUrls : ["./app/bookmark/bookmark.component.css"]
 })
 
 export class BookmarkComponent {

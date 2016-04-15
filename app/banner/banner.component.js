@@ -9,17 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("angular2/core");
-var BookmarkListComponent = (function () {
-    function BookmarkListComponent() {
+var BannerBarComponent = (function () {
+    function BannerBarComponent() {
     }
-    BookmarkListComponent = __decorate([
+    BannerBarComponent = __decorate([
         core_1.Component({
-            selector: "bookmark-list",
-            template: "\n  <nav class=\"mdl-navigation\">\n    <a class=\"mdl-navigation__link\" href=\"\">Link</a>\n    <a class=\"mdl-navigation__link\" href=\"\">Link</a>\n    <a class=\"mdl-navigation__link\" href=\"\">Link</a>\n    <a class=\"mdl-navigation__link\" href=\"\">Link</a>\n  </nav>\n  "
+            selector: "banner",
+            templateUrl: "./app/banner/banner.component.html",
+            styleUrls: ["./app/banner/banner.component.css"]
         }), 
         __metadata('design:paramtypes', [])
-    ], BookmarkListComponent);
-    return BookmarkListComponent;
+    ], BannerBarComponent);
+    return BannerBarComponent;
 }());
-exports.BookmarkListComponent = BookmarkListComponent;
-//# sourceMappingURL=bookmarklist.component.js.map
+exports.BannerBarComponent = BannerBarComponent;
+//# sourceMappingURL=banner.component.js.map

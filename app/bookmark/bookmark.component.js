@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("angular2/core");
-var banner_component_1 = require("../bookmark/banner.component");
+var bookmarklist_component_1 = require("./bookmarklist.component");
 var BookmarkComponent = (function () {
     function BookmarkComponent() {
     }
@@ -18,8 +18,9 @@ var BookmarkComponent = (function () {
             selector: "bookmark",
             templateUrl: "./app/bookmark/bookmark.component.html",
             directives: [
-                banner_component_1.BannerBarComponent
-            ]
+                bookmarklist_component_1.BookmarkListComponent
+            ],
+            styleUrls: ["./app/bookmark/bookmark.component.css"]
         }), 
         __metadata('design:paramtypes', [])
     ], BookmarkComponent);

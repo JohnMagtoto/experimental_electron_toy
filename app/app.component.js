@@ -12,16 +12,19 @@ var core_1 = require('angular2/core');
 var router_1 = require("angular2/router");
 var bookmarklist_component_1 = require("./bookmark/bookmarklist.component");
 var bookmark_component_1 = require("./bookmark/bookmark.component");
+var banner_component_1 = require("./banner/banner.component");
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app',
-            template: "\n    <h3>Hello World from AppComponent!!!</h3>\n    <bookmark></bookmark>\n  ",
+            templateUrl: './app/app.component.html',
+            styleUrls: ["./app/app.component.css"],
             directives: [
                 router_1.ROUTER_DIRECTIVES,
-                bookmark_component_1.BookmarkComponent],
+                bookmark_component_1.BookmarkComponent,
+                banner_component_1.BannerBarComponent],
             providers: [router_1.ROUTER_PROVIDERS]
         }),
         router_1.RouteConfig([
